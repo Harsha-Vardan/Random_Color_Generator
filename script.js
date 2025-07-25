@@ -10,6 +10,7 @@ const blue = document.querySelector('#blue');
 const green = document.querySelector('#green');
 const rgbContainer = document.querySelector('.rgb-color-container');
 const copyRgbBtn = document.querySelector('.copy-rgb');
+const rgbValue = document.querySelector('.rgb-color-value');
 // creating random Hex Color
 hexBtn.addEventListener('click',(e)=>{
     const str1="0123456789ABCDEF";
@@ -25,6 +26,7 @@ rgbBtn.addEventListener('click',(e)=>{
  let redValue = red.value;
  let blueValue = blue.value;
  let greenValue = green.value;
+ rgbValue.textContent=`rgb(${redValue},${greenValue},${blueValue})`;
  rgbContainer.style.backgroundColor=`rgb(${redValue},${greenValue},${blueValue})`;
 });
 

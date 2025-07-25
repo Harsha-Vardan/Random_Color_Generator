@@ -43,7 +43,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.hex-color-container p{
+.hex-color-container p , .rgb-color-value{
     font-size: 30px;
     font-weight: bold;
     color: #fff;   
